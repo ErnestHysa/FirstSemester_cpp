@@ -1,3 +1,5 @@
+/* Ask user for integer values and if both numbers are even 
+then it will perform addition,otherwise multiplication */
 #include <iostream>
 using namespace std;
 
