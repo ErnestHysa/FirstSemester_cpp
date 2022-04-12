@@ -6,11 +6,11 @@ using namespace std;
 
 int main()
 {
-    int numberInput,firstDigit, secondDigit, fourthDigit, fifthDigit;
-    bool isValid = true;
+    int numberInput,firstDigit, secondDigit, fourthDigit, fifthDigit;//no need to check 3rd number, it always is the same
+    bool isValid = true; //bool so I can run my while loop better
 
 
-    while (isValid)
+    while (isValid) //while it's true it does the arguments below
     {
         int option;
         cout << "Give any 5 digit number: ";
@@ -35,8 +35,8 @@ int main()
       
         cout<< "=========================================================="<<endl<<endl;
         cin >> option;
-        if (option == 0)
-            isValid = false;
+        if (option == 0) //if user wants to exit types 0 
+            isValid = false; // the bool is now false and when it returns to next rotation it will fail and exit program
         cout << endl;
     }
 }
